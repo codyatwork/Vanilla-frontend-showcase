@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<!--By Cody Mims-->
+
+<head>
+    <!--Twitter card tags-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Text Reverser">
+    <meta name="twitter:description" content="Get your text with the characters reversed.">
+
+    <title>Text Reverser</title>
+    <meta name="description" content="Get your text with the characters reversed.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="textreverser.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="mirrored-heading">
+            <h1 class="reverser-heading">Text Reverser</h1>
+            <span class="reverser-heading reversed" aria-hidden="true">resreveR txeT</span>
+        </div>
+        <div class="boxes">
+            <div class="input-wrapper">
+                <textarea id="input" class="box" maxlength="280"
+                    placeholder="Enter the text you want to reverse."></textarea>
+                <p id="character-notice"><span id="character-count">280</span> character<span id="s">s</span> left.</p>
+            </div>
+            <div id="output" class="box">.esrever ot tnaw uoy txet eht retnE</div>
+        </div>
+        <button id="clear">Clear</button>
+    </main>
+    <script src="textreverser.js"></script>
+</body>

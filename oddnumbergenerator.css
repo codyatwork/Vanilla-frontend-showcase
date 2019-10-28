@@ -1,0 +1,95 @@
+body {
+    background: #222831;
+    color: #EEEEEE;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    margin: 5rem auto 1rem auto;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 35pt;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #EEEEEE;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: 0;
+    text-align: center;
+    width: 4rem;
+}
+
+/*Remove spin buttons where possible so numbers are centered*/
+
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#output {
+    border-color: #EEEEEE;
+    border-style: none groove groove groove;
+    border-width: 6px;
+    height: 5rem;
+    margin: auto;
+    max-width: 300px;
+    overflow-y: auto;
+    padding: 0 5px 5px 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    max-width: 450px;
+}
+
+button {
+    color: #14181d;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    width: 10rem;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:active {
+    border-style: solid;
+}
+
+#clear {
+    background: #EEEEEE;
+    border-color: #EEEEEE;
+}
+
+#clear:focus {
+    box-shadow: 0 0 0 0.2rem #BFBFBF;
+}
+
+#generate {
+    background: #D65A31;
+    border-color: #D65A31;
+    margin-left: 8px;
+}
+
+#generate:focus {
+    box-shadow: 0 0 0 0.2rem #9E4324;
+}

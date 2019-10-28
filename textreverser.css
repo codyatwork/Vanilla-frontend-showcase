@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000272;
+    color: #EEEEEE;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.mirrored-heading {
+    height: 156px;
+    width: 100%;
+}
+
+.reverser-heading {
+    font-size: 48pt;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+}
+
+h1 {
+    color: #FF6363;
+    text-align: left;
+}
+
+.reversed {
+    color: #A32F80;
+    right: 8px;
+    text-align: right;
+    z-index: -1;
+}
+
+.boxes {
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.box {
+    border-width: 3px;
+    height: 5rem;
+}
+
+.input-wrapper {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+#input {
+    background: transparent;
+    border-color: #FF6363;
+    border-style: solid;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: 0;
+    width: 100%;
+}
+
+#input::placeholder {
+    color: #EEEEEE;
+}
+
+#character-notice {
+    font-size: small;
+    margin: 0;
+    text-align: left;
+}
+
+.red {
+    color: red;
+}
+
+#output {
+    border-color: #A32F80;
+    border-style: solid;
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 2px;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+#clear {
+    background: #EEEEEE;
+    border-color: #EEEEEE;
+    color: #222831;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: auto;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    width: 10rem;
+}
+
+#clear:focus {
+    box-shadow: 0 0 0 0.2rem #BFBFBF;
+    outline: 0;
+}
+
+#clear:active {
+    border-style: solid;
+}
+
+#generate {
+    background: #D65A31;
+    border-color: #D65A31;
+    color: #EEEEEE;
+    margin-left: 8px;
+}
+
+#generate:focus {
+    box-shadow: 0 0 0 0.2rem #9E4324;
+}
+
+@media screen and (min-width: 431px) {
+    .mirrored-heading {
+        height: 78px;
+    }
+
+    .boxes {
+        display: flex;
+    }
+
+    .input-wrapper,
+    #output {
+        max-width: 20rem;
+    }
+
+    .input-wrapper {
+        margin-bottom: 0;
+    }
+
+    #output {
+        margin-left: 3px;
+    }
+}
