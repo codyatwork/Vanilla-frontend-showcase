@@ -17,7 +17,7 @@ input.addEventListener("input", function (event) {
     } else {
         s.textContent = "s";
     }
-    if (count == maxCharacters) {
+    if (count === maxCharacters) {
         output.textContent = ".esrever ot tnaw uoy txet eht retnE";
     } else {
         output.textContent = event.target.value.split("").reverse().join("");
