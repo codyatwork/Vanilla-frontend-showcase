@@ -12,7 +12,8 @@
     <meta name="description" content="Generate the odd numbers between your desired values.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
     <link href="oddnumbergenerator.css" rel="stylesheet">
 </head>
 
@@ -21,8 +22,8 @@
         <h1>Odd Number Generator</h1>
         <form id="oddForm">
             <p>Generate all odd numbers from <input id="min" type="number" aria-label="Minimum number" min="-10000"
-                    max="10000" value="0" step="any" required> to <input id="max" type="number"
-                    aria-label="Maximum number" min="-10000" max="10000" value="100" step="any" required>.</p>
+                max="10000" value="0" step="any" required> to <input id="max" type="number"
+                aria-label="Maximum number" min="-10000" max="10000" value="100" step="any" required>.</p>
             <div id="output" aria-live="polite"></div>
             <div class="buttons">
                 <button id="clear" type="reset">Clear</button>

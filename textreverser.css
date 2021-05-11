@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text: #EEEEEE;
+    --forwards: #FF6363;
+    --backwards: #A32F80;
+}
+
 body {
     background: #000272;
-    color: #EEEEEE;
+    color: var(--text);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 8px;
     text-align: center;
@@ -16,19 +22,19 @@ body {
 }
 
 .reverser-heading {
-    font-size: 48pt;
+    font-size: 4em;
     font-weight: bold;
     margin: 0;
     position: absolute;
 }
 
 h1 {
-    color: #FF6363;
+    color: var(--forwards);
     text-align: left;
 }
 
 .reversed {
-    color: #A32F80;
+    color: var(--backwards);
     right: 8px;
     text-align: right;
     z-index: -1;
@@ -52,7 +58,7 @@ h1 {
 
 #input {
     background: transparent;
-    border-color: #FF6363;
+    border-color: var(--forwards);
     border-style: solid;
     color: inherit;
     font-family: inherit;
@@ -62,7 +68,7 @@ h1 {
 }
 
 #input::placeholder {
-    color: #EEEEEE;
+    color: var(--text);
 }
 
 #character-notice {
@@ -76,7 +82,7 @@ h1 {
 }
 
 #output {
-    border-color: #A32F80;
+    border-color: var(--backwards);
     border-style: solid;
     flex: 1;
     overflow-y: auto;
@@ -86,12 +92,12 @@ h1 {
 }
 
 #clear {
-    background: #EEEEEE;
-    border-color: #EEEEEE;
+    background: var(--text);
+    border-color: var(--text);
     color: #222831;
     cursor: pointer;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5;
     margin: auto;
     padding: 3px 12px;
@@ -106,17 +112,6 @@ h1 {
 
 #clear:active {
     border-style: solid;
-}
-
-#generate {
-    background: #D65A31;
-    border-color: #D65A31;
-    color: #EEEEEE;
-    margin-left: 8px;
-}
-
-#generate:focus {
-    box-shadow: 0 0 0 0.2rem #9E4324;
 }
 
 @media screen and (min-width: 431px) {

@@ -1,6 +1,11 @@
+:root {
+    --text: #EEEEEE;
+    --generate: #D65A31;
+}
+
 body {
     background: #222831;
-    color: #EEEEEE;
+    color: var(--text);
     font-family: 'Karla', sans-serif;
 }
 
@@ -10,7 +15,7 @@ main {
 }
 
 h1 {
-    font-size: 35pt;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -22,7 +27,7 @@ p {
 input {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid var(--text);
     color: inherit;
     font-family: inherit;
     font-size: inherit;
@@ -32,14 +37,13 @@ input {
 }
 
 /*Remove spin buttons where possible so numbers are centered*/
-
 input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
 #output {
-    border-color: #EEEEEE;
+    border-color: var(--text);
     border-style: none groove groove groove;
     border-width: 6px;
     height: 5rem;
@@ -57,10 +61,10 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 }
 
 button {
-    color: #14181d;
+    color: #14181D;
     cursor: pointer;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5;
     padding: 3px 12px;
     text-transform: uppercase;
@@ -76,8 +80,8 @@ button:active {
 }
 
 #clear {
-    background: #EEEEEE;
-    border-color: #EEEEEE;
+    background: var(--text);
+    border-color: var(--text);
 }
 
 #clear:focus {
@@ -85,8 +89,8 @@ button:active {
 }
 
 #generate {
-    background: #D65A31;
-    border-color: #D65A31;
+    background: var(--generate);
+    border-color: var(--generate);
     margin-left: 8px;
 }
 

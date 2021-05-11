@@ -1,5 +1,5 @@
 # Vanilla frontend showcase
-These are two webpages I made that show off my design and coding skills through frontend development. They were made with no frameworks, the way websites of this scale should be.
+These are two webpages I made that show off my design and coding skills through frontend development. They were made with no frameworks.
 
 See the pages in action:
 
