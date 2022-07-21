@@ -1,5 +1,4 @@
 const dangerClass = "red";
-const reversedHeading = ".esrever ot tnaw uoy txet eht retnE";
 const s = "s";
 let input = document.getElementById("input");
 let characterNotice = document.getElementById("character-notice");
@@ -7,6 +6,7 @@ let characterCount = document.getElementById("character-count");
 const maxCharacters = parseInt(characterCount.textContent);
 let sSpan = document.getElementById("s");
 let output = document.getElementById("output");
+const reversedPlaceholder = output.textContent;
 input.addEventListener("input", function (event) {
     let count = maxCharacters - event.target.value.length;
     characterCount.textContent = count;
@@ -21,15 +21,16 @@ input.addEventListener("input", function (event) {
         sSpan.textContent = s;
     }
     if (count === maxCharacters) {
-        output.textContent = reversedHeading;
+        output.textContent = reversedPlaceholder;
     } else {
         output.textContent = event.target.value.split("").reverse().join("");
     }
 });
 document.getElementById("clear").addEventListener("click", function () {
     input.value = "";
+    input.focus();
     characterNotice.classList.remove(dangerClass);
     characterCount.textContent = maxCharacters;
     sSpan.textContent = s;
-    output.textContent = reversedHeading;
+    output.textContent = reversedPlaceholder;
 });
