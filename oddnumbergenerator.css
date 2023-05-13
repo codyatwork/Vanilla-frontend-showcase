@@ -1,10 +1,10 @@
 :root {
-    --text: #EEEEEE;
-    --generate: #D65A31;
+    --text: oklch(94.91% 0 0);
+    --generate: oklch(61.97% 0.166 38.22);
 }
 
 body {
-    background: #222831;
+    background: oklch(27.49% 0.019 258.37);
     color: var(--text);
     font-family: 'Karla', sans-serif;
 }
@@ -37,7 +37,8 @@ input {
 }
 
 /*Remove spin buttons where possible so numbers are centered*/
-input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -61,7 +62,7 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 }
 
 button {
-    color: #14181D;
+    color: oklch(20.71% 0.012 254.09);
     cursor: pointer;
     font-family: inherit;
     font-size: 1em;
@@ -85,7 +86,7 @@ button:active {
 }
 
 #clear:focus {
-    box-shadow: 0 0 0 0.2rem #BFBFBF;
+    box-shadow: 0 0 0 0.2rem oklch(80.47% 0 0);
 }
 
 #generate {
@@ -95,5 +96,5 @@ button:active {
 }
 
 #generate:focus {
-    box-shadow: 0 0 0 0.2rem #9E4324;
+    box-shadow: 0 0 0 0.2rem oklch(49.86% 0.129 38.73);
 }
